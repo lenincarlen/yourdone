@@ -1,0 +1,24 @@
+mongo:
+  connectionUrl: mongodb://admin:admin@ac-kvmpiai-shard-00-00.dippnxf.mongodb.net:27017,ac-kvmpiai-shard-00-01.dippnxf.mongodb.net:27017,ac-kvmpiai-shard-00-02.dippnxf.mongodb.net:27017/gift?ssl=true&replicaSet=atlas-7vjop8-shard-0&authSource=admin&w=majority
+  reconnectInterval: 1000
+email:
+  shouldSendConfirmation: true
+  use: server
+  server:
+    service: gmail
+    user: afrikinvest.dev@gmail.com
+    pass: necffbjcknmhyeuu
+  mailhog:
+    host: localhost
+    port: 1025
+    secure: false
+  expirationTime: 86400
+  baseURL : https://giftoflegecy.herokuapp.com
+  verificationBaseURL: https://giftoflegecy.herokuapp.com/verification
+login:
+  secretKey: XXXXXX
+  tokenExpiry: 20000
+service:
+  verifyToken: false
+  api:
+    port: 5000
